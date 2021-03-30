@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grassHalf_right.png-aeda8a80b96be524271c4cb079eca986.stex"
+path="res://.import/alienYellow_climb1.png-687df76fbb27adae162c41bbe210365b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/grassHalf_right.png"
-dest_files=[ "res://.import/grassHalf_right.png-aeda8a80b96be524271c4cb079eca986.stex" ]
+source_file="res://player_assets/alienYellow_climb1.png"
+dest_files=[ "res://.import/alienYellow_climb1.png-687df76fbb27adae162c41bbe210365b.stex" ]
 
 [params]
 

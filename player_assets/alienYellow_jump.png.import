@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/castleHalf.png-eefa9a5377a5a05cd98b72456fe369ea.stex"
+path="res://.import/alienYellow_jump.png-707c6ffc0e284fc0adbbe070ffed0cc7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/castleHalf.png"
-dest_files=[ "res://.import/castleHalf.png-eefa9a5377a5a05cd98b72456fe369ea.stex" ]
+source_file="res://player_assets/alienYellow_jump.png"
+dest_files=[ "res://.import/alienYellow_jump.png-707c6ffc0e284fc0adbbe070ffed0cc7.stex" ]
 
 [params]
 
