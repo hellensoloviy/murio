@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/alienYellow_duck.png-a1b63759ee5d3e0ea5330cb96f8107ab.stex"
+path="res://.import/alienYellow_swim2.png-c3f3bc9df9a31d506ca912fb49e2a921.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player_assets/alienYellow_duck.png"
-dest_files=[ "res://.import/alienYellow_duck.png-a1b63759ee5d3e0ea5330cb96f8107ab.stex" ]
+source_file="res://sprites/player_assets/alienYellow_swim2.png"
+dest_files=[ "res://.import/alienYellow_swim2.png-c3f3bc9df9a31d506ca912fb49e2a921.stex" ]
 
 [params]
 

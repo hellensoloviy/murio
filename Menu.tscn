@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://sprites/uncolored_piramids.png" type="Texture" id=2]
+[ext_resource path="res://sprites/controls/logo_murio_plain.png" type="Texture" id=3]
+[ext_resource path="res://sprites/controls/logo_murio.png" type="Texture" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.576471, 0.709804, 0.882353, 1 )
@@ -9,22 +12,90 @@ bg_color = Color( 0.576471, 0.709804, 0.882353, 1 )
 bg_color = Color( 0.2, 0.360784, 0.564706, 1 )
 
 [node name="MenuScene" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.753
+anchor_bottom = 1.737
+margin_left = -6.75787
+margin_top = -2.05133
+margin_right = -6.82996
+margin_bottom = -2.25134
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="."]
-margin_left = 285.0
-margin_top = 252.0
-margin_right = 443.0
-margin_bottom = 296.0
+[node name="uncolored_piramids" type="Sprite" parent="."]
+position = Vector2( 894.149, 520.131 )
+scale = Vector2( 1.74998, 1.01718 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="start_button" type="Button" parent="."]
+margin_left = 491.445
+margin_top = 739.006
+margin_right = 1257.44
+margin_bottom = 783.006
+rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
 text = "Start"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+[node name="options_button" type="Button" parent="."]
+anchor_top = -0.00095981
+anchor_bottom = -0.00095981
+margin_left = 491.445
+margin_top = 808.006
+margin_right = 1257.44
+margin_bottom = 852.006
+rect_pivot_offset = Vector2( 339.611, 22 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+text = "Options"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit_button" type="Button" parent="."]
+margin_left = 491.445
+margin_top = 877.006
+margin_right = 1257.44
+margin_bottom = 921.006
+rect_pivot_offset = Vector2( 339.611, 22 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 0.323
+anchor_bottom = 0.111
+margin_top = -1.0
+margin_right = 1215.21
+margin_bottom = 513.338
+use_top_left = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="logo_murio_plain" type="Sprite" parent="CenterContainer"]
+position = Vector2( 864.632, 328.101 )
+scale = Vector2( 0.587764, 0.568827 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="logo_murio" type="Sprite" parent="."]
+visible = false
+position = Vector2( 880.917, 318.633 )
+scale = Vector2( 0.592199, 0.569751 )
+texture = ExtResource( 4 )
+[connection signal="pressed" from="start_button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="options_button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_Button_pressed"]

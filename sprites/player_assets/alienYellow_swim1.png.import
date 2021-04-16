@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/alienYellow_walk1.png-193c42311296bc3adc22c522d89c6621.stex"
+path="res://.import/alienYellow_swim1.png-e7924dd79466210ff8a888572851500d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player_assets/alienYellow_walk1.png"
-dest_files=[ "res://.import/alienYellow_walk1.png-193c42311296bc3adc22c522d89c6621.stex" ]
+source_file="res://sprites/player_assets/alienYellow_swim1.png"
+dest_files=[ "res://.import/alienYellow_swim1.png-e7924dd79466210ff8a888572851500d.stex" ]
 
 [params]
 
