@@ -60,10 +60,17 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 [node name="root" type="Node2D"]
 
 [node name="background" type="TileMap" parent="."]
+visible = false
+centered_textures = true
 format = 1
 
 [node name="uncolored_piramids" type="Sprite" parent="background"]
 position = Vector2( 776.178, 575.607 )
+scale = Vector2( 1.50426, 1.12508 )
+texture = ExtResource( 2 )
+
+[node name="uncolored_piramids2" type="Sprite" parent="background"]
+position = Vector2( 2311.8, 573.449 )
 scale = Vector2( 1.50426, 1.12508 )
 texture = ExtResource( 2 )
 
@@ -72,13 +79,25 @@ position = Vector2( 2.54675, -1.27338 )
 tile_set = SubResource( 3 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 131072, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 196612, 0, 0, 327691, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393226, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0 )
+tile_data = PoolIntArray( 131072, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 196612, 0, 0, 327691, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393226, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 458769, 0, 0, 458770, 0, 0, 458771, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0 )
 
 [node name="player_yellow" parent="." instance=ExtResource( 1 )]
 position = Vector2( 74.549, 254.595 )
+
+[node name="Camera2D" type="Camera2D" parent="player_yellow"]
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
 
 [node name="enemy_slime_purple" parent="." instance=ExtResource( 4 )]
 position = Vector2( 564.631, 702.964 )
 script = ExtResource( 3 )
 speed = 50
 moveDist = -210
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="uncolored_piramids" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 869.183, 694.289 )
+scale = Vector2( 1.68342, 1.35603 )
+texture = ExtResource( 2 )
