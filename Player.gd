@@ -9,7 +9,6 @@ var jumpForce : int = 800
 var gravity : int = 800
  
 var vel : Vector2 = Vector2()
-var grounded : bool = false
 
 # components
 onready var sprite = $Sprite
