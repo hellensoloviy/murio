@@ -32,7 +32,7 @@ animations = [ {
 radius = 32.5301
 height = 30.9139
 
-[node name="enemy_slime_purple" type="KinematicBody2D"]
+[node name="enemy_slime" type="KinematicBody2D"]
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )

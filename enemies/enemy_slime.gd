@@ -6,7 +6,6 @@ export var moveDist : int = 100
 onready var startX : float = position.x
 onready var targetX : float = position.x + moveDist
 
-
 onready var sprite = $Sprite
 
 # Called when the node enters the scene tree for the first time.
