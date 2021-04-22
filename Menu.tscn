@@ -12,30 +12,64 @@ bg_color = Color( 0.576471, 0.709804, 0.882353, 1 )
 bg_color = Color( 0.2, 0.360784, 0.564706, 1 )
 
 [node name="MenuScene" type="Control"]
-anchor_right = 1.753
-anchor_bottom = 1.737
-margin_left = -6.75787
-margin_top = -2.05133
-margin_right = -6.82996
-margin_bottom = -2.25134
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="uncolored_piramids" type="Sprite" parent="."]
-position = Vector2( 894.149, 520.131 )
-scale = Vector2( 1.74998, 1.01718 )
+position = Vector2( 1024, 600 )
+scale = Vector2( 2.0018, 1.17252 )
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="start_button" type="Button" parent="."]
-margin_left = 491.445
-margin_top = 739.006
-margin_right = 1257.44
-margin_bottom = 783.006
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 0.323
+anchor_bottom = 0.111
+margin_left = -0.92041
+margin_top = -0.332581
+margin_right = 1385.58
+margin_bottom = 596.467
+use_top_left = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="logo_murio_plain" type="Sprite" parent="CenterContainer"]
+position = Vector2( 1040.53, 382.689 )
+scale = Vector2( 0.587764, 0.568827 )
+texture = ExtResource( 3 )
+
+[node name="logo_murio" type="Sprite" parent="."]
+visible = false
+position = Vector2( 880.917, 318.633 )
+scale = Vector2( 0.592199, 0.569751 )
+texture = ExtResource( 4 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -495.5
+margin_top = -470.333
+margin_right = 495.5
+margin_bottom = -125.333
+custom_constants/separation = 26
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="start_button" type="Button" parent="VBoxContainer"]
+margin_top = 80.0
+margin_right = 991.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
@@ -44,13 +78,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="options_button" type="Button" parent="."]
-anchor_top = -0.00095981
-anchor_bottom = -0.00095981
-margin_left = 491.445
-margin_top = 808.006
-margin_right = 1257.44
-margin_bottom = 852.006
+[node name="options_button" type="Button" parent="VBoxContainer"]
+margin_top = 150.0
+margin_right = 991.0
+margin_bottom = 194.0
+rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
@@ -59,11 +91,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="exit_button" type="Button" parent="."]
-margin_left = 491.445
-margin_top = 877.006
-margin_right = 1257.44
-margin_bottom = 921.006
+[node name="exit_button" type="Button" parent="VBoxContainer"]
+margin_top = 220.0
+margin_right = 991.0
+margin_bottom = 264.0
+rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
@@ -72,30 +104,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_right = 0.323
-anchor_bottom = 0.111
-margin_top = -1.0
-margin_right = 1215.21
-margin_bottom = 513.338
-use_top_left = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="logo_murio_plain" type="Sprite" parent="CenterContainer"]
-position = Vector2( 864.632, 328.101 )
-scale = Vector2( 0.587764, 0.568827 )
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="logo_murio" type="Sprite" parent="."]
-visible = false
-position = Vector2( 880.917, 318.633 )
-scale = Vector2( 0.592199, 0.569751 )
-texture = ExtResource( 4 )
-[connection signal="pressed" from="start_button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="options_button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="exit_button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/start_button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/options_button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit_button" to="." method="_on_Button_pressed"]
