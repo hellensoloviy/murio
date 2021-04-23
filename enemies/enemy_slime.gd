@@ -1,36 +1,33 @@
 extends KinematicBody2D
 
+var velocity  = Vector2()
+
+export var direction = -1
+export var detects_cliffs = true 
+
 export var speed : int = 100
-export var moveDist : int = 100
- 
-onready var startX : float = position.x
-onready var targetX : float = position.x + moveDist
 
 onready var sprite = $Sprite
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass 
+	if direction == 1:
+		sprite.flip_h = true
+	$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
+	$floor_checker.enabled = detects_cliffs
 
 func _physics_process (delta):
 	
-	# move to the "targetX" position
-	position.x = move_to(position.x, targetX, speed * delta)
- 
-	# if we're at our target, move in the other direction
-	if position.x == targetX:
-		if targetX == startX:
-			targetX = position.x + moveDist
-		else:
-			targetX = startX
+	if is_on_wall() or not $floor_checker.is_colliding() and detects_cliffs and is_on_floor():
+		direction = direction * -1
+		sprite.flip_h = not sprite.flip_h
+		$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	
 	$Sprite.play("move")
+
+	velocity.y += speed 
+	velocity.x  = speed * direction 
 	
-	# sprite direction
-	if targetX > position.x:
-		sprite.flip_h = true
-	else:
-		sprite.flip_h = false
+	velocity = move_and_slide(velocity, Vector2.UP)
 
 # moves "current" towards "to" in an increment of "step"
 func move_to (current, to, step):

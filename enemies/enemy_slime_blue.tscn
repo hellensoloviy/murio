@@ -8,9 +8,9 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "idle",
+"name": "dead",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ) ],
@@ -18,20 +18,19 @@ animations = [ {
 "name": "hit",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "dead",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "move",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 32.5301
-height = 30.9139
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 23.8024, 35 )
 
 [node name="enemy_slime" type="KinematicBody2D"]
 script = ExtResource( 5 )
@@ -41,6 +40,11 @@ frames = SubResource( 1 )
 animation = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 33.6008 )
+position = Vector2( 0, 40 )
 rotation = 1.5708
 shape = SubResource( 2 )
+
+[node name="floor_checker" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 75 )
+collision_mask = 2
