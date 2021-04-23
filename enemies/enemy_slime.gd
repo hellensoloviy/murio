@@ -28,28 +28,3 @@ func _physics_process (delta):
 	velocity.x  = speed * direction 
 	
 	velocity = move_and_slide(velocity, Vector2.UP)
-
-# moves "current" towards "to" in an increment of "step"
-func move_to (current, to, step):
- 
-	var new = current
- 
-	# are we moving positive?
-	if new < to:
-		new += step
- 
-		if new > to:
-			new = to
-	# are we moving negative?
-	else:
-		new -= step
- 
-		if new < to:
-			new = to
- 
-	return new
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
