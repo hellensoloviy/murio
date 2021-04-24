@@ -59,3 +59,9 @@ playing = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -62.9426 )
 shape = SubResource( 2 )
+
+[node name="demage_taken" type="Timer" parent="."]
+wait_time = 3.5
+one_shot = true
+
+[connection signal="timeout" from="demage_taken" to="." method="_on_demage_taken_timeout"]

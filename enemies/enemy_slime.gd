@@ -33,9 +33,26 @@ func _physics_process (delta):
 
 func _on_top_checker_body_entered(body):
 	sprite.play("hit")
-	speed = 0
+	set_modulate(Color(1,1,1,0.5))
 	
+	pause_mode = true
+	
+	speed = 0
 	set_collision_layer_bit(4, false)
 	set_collision_mask_bit(0, false)
+	$top_checker.set_collision_layer_bit(4, false)
+	$top_checker.set_collision_mask_bit(0, false)
+	$sides_checker.set_collision_layer_bit(4, false)
+	$sides_checker.set_collision_mask_bit(0, false)
+	$Timer.start()
 	
+	#call func of player object to get "reaction" 
+	body.bounce_back()
 	
+
+func _on_sides_checker_body_entered(body):
+	body.get_hurt(position.x)
+
+func _on_Timer_timeout():
+	#remove itself from the scene 
+	queue_free()
