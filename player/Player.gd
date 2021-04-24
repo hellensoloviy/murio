@@ -47,7 +47,7 @@ func _physics_process (delta):
 	elif velocity.x > 0:
 		sprite.flip_h = false
 		
-		# gravity
+	# gravity
 	velocity.y = velocity.y + gravity
 	
 	velocity = move_and_slide(velocity, Vector2.UP)

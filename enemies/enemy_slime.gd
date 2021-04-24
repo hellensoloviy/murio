@@ -14,6 +14,8 @@ func _ready():
 		sprite.flip_h = true
 	$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	$floor_checker.enabled = detects_cliffs
+	
+	sprite.play("move")
 
 func _physics_process (delta):
 	
@@ -22,9 +24,18 @@ func _physics_process (delta):
 		sprite.flip_h = not sprite.flip_h
 		$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	
-	$Sprite.play("move")
 
 	velocity.y += speed 
 	velocity.x  = speed * direction 
 	
 	velocity = move_and_slide(velocity, Vector2.UP)
+
+
+func _on_top_checker_body_entered(body):
+	sprite.play("hit")
+	speed = 0
+	
+	set_collision_layer_bit(4, false)
+	set_collision_mask_bit(0, false)
+	
+	

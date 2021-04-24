@@ -10,7 +10,6 @@
 [ext_resource path="res://player/Player.gd" type="Script" id=8]
 [ext_resource path="res://sprites/player_assets/alienYellow_stand.png" type="Texture" id=9]
 
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 1 ) ],
@@ -48,6 +47,7 @@ animations = [ {
 radius = 53.0012
 
 [node name="player_yellow" type="KinematicBody2D"]
+collision_mask = 18
 script = ExtResource( 8 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
