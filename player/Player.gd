@@ -67,6 +67,9 @@ func get_hurt(var enemy_position_x):
 		velocity.x =  -700
 	elif position.x > enemy_position_x:
 		velocity.x = 700
+		
+	Input.action_release("move_left")
+	Input.action_release("move_right")
 	
 
 func on_demage_taken_state(var is_on):
