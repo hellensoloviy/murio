@@ -104,6 +104,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="VBoxContainer/start_button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/options_button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/exit_button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit_button" to="." method="_on_exit_button_pressed"]
