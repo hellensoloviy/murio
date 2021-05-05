@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://GUI/Menu.gd" type="Script" id=1]
 [ext_resource path="res://sprites/uncolored_piramids.png" type="Texture" id=2]
 [ext_resource path="res://sprites/controls/logo_murio_plain.png" type="Texture" id=3]
 [ext_resource path="res://sprites/controls/logo_murio.png" type="Texture" id=4]
