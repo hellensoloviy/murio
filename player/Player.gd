@@ -85,3 +85,5 @@ func on_demage_taken_state(var is_on):
 
 func _on_demage_taken_timeout():
 	on_demage_taken_state(false)
+	get_tree().change_scene("res://GUI/game_over_screen.tscn")
+	
