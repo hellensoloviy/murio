@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Murio"
-run/main_scene="res://GUI/Menu.tscn"
+run/main_scene="res://scenes/UI/Menu.tscn"
 config/icon="res://icon.png"
 
 [display]

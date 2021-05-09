@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://GUI/Menu.gd" type="Script" id=1]
-[ext_resource path="res://sprites/backgrounds/uncolored_piramids.png" type="Texture" id=2]
-[ext_resource path="res://sprites/controls/logo_murio_plain.png" type="Texture" id=3]
-[ext_resource path="res://sprites/controls/logo_murio.png" type="Texture" id=4]
+[ext_resource path="res://scenes/UI/Menu.gd" type="Script" id=1]
+[ext_resource path="res://sprites/controls/logo_murio.png" type="Texture" id=2]
+[ext_resource path="res://sprites/backgrounds/uncolored_piramids.png" type="Texture" id=3]
+[ext_resource path="res://sprites/controls/logo_murio_plain.png" type="Texture" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.576471, 0.709804, 0.882353, 1 )
@@ -22,7 +22,7 @@ __meta__ = {
 [node name="uncolored_piramids" type="Sprite" parent="."]
 position = Vector2( 1024, 600 )
 scale = Vector2( 2.0018, 1.17252 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -42,13 +42,13 @@ __meta__ = {
 [node name="logo_murio_plain" type="Sprite" parent="CenterContainer"]
 position = Vector2( 1040.53, 382.689 )
 scale = Vector2( 0.587764, 0.568827 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="logo_murio" type="Sprite" parent="."]
 visible = false
 position = Vector2( 880.917, 318.633 )
 scale = Vector2( 0.592199, 0.569751 )
-texture = ExtResource( 4 )
+texture = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
