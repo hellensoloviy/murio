@@ -74,6 +74,8 @@ pause_button={
 2d_physics/layer_4="item"
 2d_render/layer_5="enemy"
 2d_physics/layer_5="enemy"
+2d_render/layer_6="level_margins"
+2d_physics/layer_6="level_margins"
 
 [rendering]
 

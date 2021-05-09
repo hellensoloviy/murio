@@ -2,6 +2,9 @@ extends KinematicBody2D
 
 var velocity  = Vector2()
 
+const _animation_move = "move"
+const _animation_hit = "hit"
+
 export var direction = -1
 export var detects_cliffs = true 
 
@@ -15,7 +18,7 @@ func _ready():
 	$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
 	$floor_checker.enabled = detects_cliffs
 	
-	sprite.play("move")
+	sprite.play(_animation_move)
 
 func _physics_process (delta):
 	
@@ -32,7 +35,7 @@ func _physics_process (delta):
 
 
 func _on_top_checker_body_entered(body):
-	sprite.play("hit")
+	sprite.play(_animation_hit)
 	set_modulate(Color(1,1,1,0.5))
 	
 	pause_mode = true
