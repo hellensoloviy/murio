@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/UI/Menu.gd" type="Script" id=1]
 [ext_resource path="res://sprites/controls/logo_murio.png" type="Texture" id=2]
 [ext_resource path="res://sprites/backgrounds/uncolored_piramids.png" type="Texture" id=3]
 [ext_resource path="res://sprites/controls/logo_murio_plain.png" type="Texture" id=4]
+[ext_resource path="res://fonts/ Kind and Rich - Personal Use.otf" type="DynamicFontData" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.576471, 0.709804, 0.882353, 1 )
@@ -11,9 +12,25 @@ bg_color = Color( 0.576471, 0.709804, 0.882353, 1 )
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.2, 0.360784, 0.564706, 1 )
 
+[sub_resource type="DynamicFont" id=3]
+size = 48
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 48
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 48
+font_data = ExtResource( 5 )
+
 [node name="MenuScene" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -0.92041
+margin_top = -0.330261
+margin_right = -0.92041
+margin_bottom = -0.330322
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -68,11 +85,12 @@ __meta__ = {
 [node name="start_button" type="Button" parent="VBoxContainer"]
 margin_top = 80.0
 margin_right = 991.0
-margin_bottom = 124.0
-rect_min_size = Vector2( 0, 44 )
+margin_bottom = 130.0
+rect_min_size = Vector2( 0, 50 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Start"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -81,11 +99,12 @@ __meta__ = {
 [node name="options_button" type="Button" parent="VBoxContainer"]
 margin_top = 150.0
 margin_right = 991.0
-margin_bottom = 194.0
+margin_bottom = 200.0
 rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 text = "Options"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -94,11 +113,12 @@ __meta__ = {
 [node name="exit_button" type="Button" parent="VBoxContainer"]
 margin_top = 220.0
 margin_right = 991.0
-margin_bottom = 264.0
+margin_bottom = 270.0
 rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 5 )
 text = "Exit"
 __meta__ = {
 "_edit_use_anchors_": false
