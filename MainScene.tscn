@@ -187,7 +187,7 @@ speed = 80
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="uncolored_piramids" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 1032.43, 601.388 )
+position = Vector2( 1030.54, 601.388 )
 scale = Vector2( 2.02194, 1.19716 )
 texture = ExtResource( 2 )
 
@@ -207,6 +207,9 @@ collision_mask = 51
 [node name="Camera2D" type="Camera2D" parent="player_yellow"]
 current = true
 limit_left = -500
+limit_top = -700
+limit_right = 8000
+limit_bottom = 5000
 limit_smoothed = true
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true

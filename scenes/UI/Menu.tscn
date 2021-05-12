@@ -53,6 +53,7 @@ margin_right = 1385.58
 margin_bottom = 596.467
 use_top_left = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -79,13 +80,14 @@ margin_bottom = -125.333
 custom_constants/separation = 26
 alignment = 1
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="start_button" type="Button" parent="VBoxContainer"]
-margin_top = 80.0
+margin_top = 77.0
 margin_right = 991.0
-margin_bottom = 130.0
+margin_bottom = 127.0
 rect_min_size = Vector2( 0, 50 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
@@ -97,9 +99,9 @@ __meta__ = {
 }
 
 [node name="options_button" type="Button" parent="VBoxContainer"]
-margin_top = 150.0
+margin_top = 153.0
 margin_right = 991.0
-margin_bottom = 200.0
+margin_bottom = 197.0
 rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
@@ -111,9 +113,9 @@ __meta__ = {
 }
 
 [node name="exit_button" type="Button" parent="VBoxContainer"]
-margin_top = 220.0
+margin_top = 223.0
 margin_right = 991.0
-margin_bottom = 270.0
+margin_bottom = 267.0
 rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
 custom_styles/hover = SubResource( 1 )
