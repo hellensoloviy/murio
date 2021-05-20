@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal demage_taken(amount)
+
 # stats
 var score : int = 0
  
@@ -12,10 +14,11 @@ const _action_jump = "jump"
 const _action_move_left = "move_left"
 const _action_move_right = "move_right"
 
-
 const _animation_jump = "jump"
 const _animation_walk = "walk"
 const _animation_stand = "stand"
+
+const _EVENT_DEMAGE_TAKEN = "demage_taken"
 
 var velocity : Vector2 = Vector2()
 
@@ -68,6 +71,7 @@ func bounce_back():
 func get_hurt(var enemy_position_x):
 	
 	on_demage_taken_state(true)
+	emit_signal(_EVENT_DEMAGE_TAKEN, 1)
 	
 	velocity.y = JUMP_FORCE * 0.5
 	if position.x < enemy_position_x:
@@ -92,3 +96,8 @@ func on_demage_taken_state(var is_on):
 func _on_demage_taken_timeout():
 	on_demage_taken_state(false)
 	
+
+func _on_health_system_health_depleted():
+	#TODO: - 
+	#end game here - death event 
+	pass 

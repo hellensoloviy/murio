@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://player/player_yellow.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/backgrounds/uncolored_piramids.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://enemies/enemy_slime_green.tscn" type="PackedScene" id=10]
 [ext_resource path="res://enemies/enemy_slime_blue.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/UI/Pause_screen.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/UI/health_system_bar.tscn" type="PackedScene" id=13]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -187,7 +188,7 @@ speed = 80
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="uncolored_piramids" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 1030.54, 601.388 )
+position = Vector2( 1030.54, 600.514 )
 scale = Vector2( 2.02194, 1.19716 )
 texture = ExtResource( 2 )
 
@@ -219,6 +220,17 @@ editor_draw_limits = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="health_system" parent="CanvasLayer" instance=ExtResource( 13 )]
+anchor_left = 1.0
+anchor_top = 1.0
+margin_left = -2018.0
+margin_top = -1178.0
+margin_right = -2018.0
+margin_bottom = -1178.0
+
 [node name="Pause_screen" parent="CanvasLayer" instance=ExtResource( 12 )]
 pause_mode = 2
 visible = false
+
+[connection signal="demage_taken" from="player_yellow" to="CanvasLayer/health_system" method="_on_player_yellow_demage_taken"]
+[connection signal="health_depleted" from="CanvasLayer/health_system" to="player_yellow" method="_on_health_system_health_depleted"]

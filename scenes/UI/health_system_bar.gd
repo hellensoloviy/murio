@@ -7,14 +7,20 @@ export var current_value = 5
 export var max_value = 5
 export var step = 1
 
+signal health_depleted
+
+#private 
+const _DEATH_EVENT = "health_depleted"
+
+
 func _ready():
 	update_heart_value(current_value)
 	pass 
 
 func update_heart_value(value):
+	current_value = value
 	if value == 0: 
 		death_event()
-	
 	for i in $bar.get_child_count():
 		if i < value:
 			$bar.get_child(i).texture = heart_full
@@ -24,5 +30,11 @@ func update_heart_value(value):
 	pass
 
 func death_event():
-	#death event will be here
+	emit_signal(_DEATH_EVENT)
 	pass
+
+func _on_player_yellow_demage_taken(amount):
+	var newValue = current_value - amount
+	update_heart_value(newValue)
+	if newValue <= 0:
+		death_event()
