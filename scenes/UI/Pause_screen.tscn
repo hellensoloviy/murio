@@ -15,16 +15,21 @@ font_data = ExtResource( 1 )
 [node name="Pause_screen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 200.0
+margin_top = 101.0
+margin_right = -162.0
+margin_bottom = -156.0
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 247.0
-margin_top = 104.0
-margin_right = 1803.0
-margin_bottom = 997.0
+margin_left = 255.0
+margin_top = 106.0
+margin_right = 1493.0
+margin_bottom = 911.0
+rect_scale = Vector2( 1, 1.04 )
 color = Color( 0.0352941, 0.027451, 0.027451, 0.247059 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -34,10 +39,11 @@ __meta__ = {
 modulate = Color( 0.396078, 0.854902, 0.921569, 1 )
 anchor_right = 1.0
 anchor_bottom = 0.989
-margin_left = 588.533
-margin_top = 192.0
-margin_right = -568.467
-margin_bottom = -565.8
+margin_left = 453.632
+margin_top = 179.865
+margin_right = -726.368
+margin_bottom = -577.935
+rect_scale = Vector2( 1, 0.879999 )
 custom_fonts/font = SubResource( 1 )
 text = "Need some pause?
 
@@ -47,10 +53,10 @@ __meta__ = {
 }
 
 [node name="resume_game_button" type="Button" parent="."]
-margin_left = 649.097
-margin_top = 519.879
-margin_right = 1354.1
-margin_bottom = 661.879
+margin_left = 519.059
+margin_top = 381.591
+margin_right = 1224.06
+margin_bottom = 523.591
 custom_fonts/font = SubResource( 2 )
 text = "Resume"
 __meta__ = {
@@ -58,15 +64,29 @@ __meta__ = {
 }
 
 [node name="go_to_title_screen" type="Button" parent="."]
-margin_left = 649.097
-margin_top = 778.315
-margin_right = 1354.1
-margin_bottom = 920.315
+margin_left = 519.059
+margin_top = 557.385
+margin_right = 1224.06
+margin_bottom = 699.385
+rect_pivot_offset = Vector2( 637.288, 142 )
 custom_fonts/font = SubResource( 2 )
 text = "Go To Title"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="go_to_desktop" type="Button" parent="."]
+margin_left = 519.059
+margin_top = 731.367
+margin_right = 1224.06
+margin_bottom = 873.367
+rect_pivot_offset = Vector2( 637.288, 142 )
+custom_fonts/font = SubResource( 2 )
+text = "Go To Desktop"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="resume_game_button" to="." method="_on_resume_game_button_pressed"]
 [connection signal="pressed" from="go_to_title_screen" to="." method="_on_go_to_title_screen_pressed"]
+[connection signal="pressed" from="go_to_desktop" to="." method="_on_go_to_desktop_pressed"]

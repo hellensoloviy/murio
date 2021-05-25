@@ -16,3 +16,7 @@ func _on_resume_game_button_pressed():
 
 func _set_paused(paused):
 	get_tree().paused = paused
+
+
+func _on_go_to_desktop_pressed():
+	get_tree().quit()
