@@ -18,6 +18,10 @@ config/name="Murio"
 run/main_scene="res://scenes/UI/Menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalSettings="*res://GlobalSettings.gd"
+
 [display]
 
 window/size/width=2048

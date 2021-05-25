@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node
+
+#TODO: add character select in the future 
+var selected_character = 0
+var selected_difficulity = 0
+
+func _ready():
+	pass # Replace with function body.
+"
+
+[node name="Node" type="Node"]
+script = SubResource( 1 )
