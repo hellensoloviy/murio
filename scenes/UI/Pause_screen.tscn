@@ -3,7 +3,7 @@
 [ext_resource path="res://fonts/ Kind and Rich - Personal Use.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/UI/Pause_screen.gd" type="Script" id=2]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=3]
 size = 200
 outline_color = Color( 0.215686, 0.811765, 0.960784, 1 )
 font_data = ExtResource( 1 )
@@ -44,7 +44,7 @@ margin_top = 179.865
 margin_right = -726.368
 margin_bottom = -577.935
 rect_scale = Vector2( 1, 0.879999 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "Need some pause?
 
 "
