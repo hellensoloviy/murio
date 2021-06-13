@@ -1,7 +1,7 @@
 extends Control
 
 const start_game_path = "res://MainScene.tscn"
-
+const settings_screen_path = "res://scenes/UI/main_settings_screen.tscn"
 
 func _ready():
 	$version.text = "Version " + GlobalSettings.VERSION
@@ -14,4 +14,5 @@ func _on_start_button_pressed():
 
 
 func _on_settings_button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene(start_game_path)
+
