@@ -102,16 +102,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="options_button" type="Button" parent="VBoxContainer"]
+[node name="settings_button" type="Button" parent="VBoxContainer"]
 margin_top = 153.0
 margin_right = 991.0
 margin_bottom = 197.0
 rect_min_size = Vector2( 0, 44 )
 rect_pivot_offset = Vector2( 339.611, 22 )
+input_pass_on_modal_close_click = false
 custom_styles/hover = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
 custom_fonts/font = SubResource( 4 )
-text = "Options"
+text = "Settings"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -143,4 +144,5 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="VBoxContainer/start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/settings_button" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/exit_button" to="." method="_on_exit_button_pressed"]
