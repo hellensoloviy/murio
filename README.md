@@ -6,7 +6,7 @@ Godot simple project, mostly to try out what Godot can and can't do. And for hav
 
 # A little bit about...
 
-<img src="https://github.com/hellensoloviy/murio/blob/main/readme/gifs/murio-yellow-flying.gif" width="350" />   <img src="https://github.com/hellensoloviy/murio/blob/main/readme/gifs/murio-yellow-with-enemy.gif" width="350" />
+<img src="/readme/gifs/murio-yellow-flying.gif" width="350" />   <img src="/readme/gifs/murio-yellow-with-enemy.gif" width="350" />
 
 It supposed to be simple 2D platformer in the future, for now only a platformer-to-be. 
 
@@ -21,7 +21,7 @@ For now there are:
   - simple menu UI; 
 
 #
-<img src="https://github.com/hellensoloviy/murio/blob/main/readme/images/basic_test_level_0.png" width="800" />
+<img src="/readme/images/basic_test_level_0.png" width="800" />
 
 # Recources
   Currently, all assests used here are free ones or public domain. 
