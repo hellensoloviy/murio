@@ -1,35 +1,35 @@
 [gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://sprites/ground/desert/sandLeft.png" type="Texture" id=1]
-[ext_resource path="res://sprites/ground/desert/sandRight.png" type="Texture" id=2]
-[ext_resource path="res://sprites/backgrounds/colored_desert.png" type="Texture" id=3]
-[ext_resource path="res://sprites/ground/desert/sandMid.png" type="Texture" id=4]
-[ext_resource path="res://sprites/ground/desert/sandCliffAlt_right.png" type="Texture" id=5]
-[ext_resource path="res://sprites/ground/desert/sandCliffAlt_left.png" type="Texture" id=6]
-[ext_resource path="res://sprites/ground/desert/sandCenter.png" type="Texture" id=7]
-[ext_resource path="res://sprites/background_parts/foliagePack_retina.png" type="Texture" id=8]
+[ext_resource path="res://sprites/ground/desert/sandLeft.png" type="Texture2D" id=1]
+[ext_resource path="res://sprites/ground/desert/sandRight.png" type="Texture2D" id=2]
+[ext_resource path="res://sprites/backgrounds/colored_desert.png" type="Texture2D" id=3]
+[ext_resource path="res://sprites/ground/desert/sandMid.png" type="Texture2D" id=4]
+[ext_resource path="res://sprites/ground/desert/sandCliffAlt_right.png" type="Texture2D" id=5]
+[ext_resource path="res://sprites/ground/desert/sandCliffAlt_left.png" type="Texture2D" id=6]
+[ext_resource path="res://sprites/ground/desert/sandCenter.png" type="Texture2D" id=7]
+[ext_resource path="res://sprites/background_parts/foliagePack_retina.png" type="Texture2D" id=8]
 [ext_resource path="res://player/player_yellow.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PackedVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PackedVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PackedVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PackedVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 0, 128, 32, 128, 32, 128, 0, 128 )
+points = PackedVector2Array( 0, 128, 32, 128, 32, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 128, 128, 0, 32, 0, 0, 128, 0 )
+points = PackedVector2Array( 128, 128, 0, 32, 0, 0, 128, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 128, 32, 0, 128, 0, 0, 128, 0 )
+points = PackedVector2Array( 128, 32, 0, 128, 0, 0, 128, 0 )
 
 [sub_resource type="TileSet" id=8]
 0/name = "sandMid.png 0"
@@ -229,30 +229,30 @@ points = PoolVector2Array( 128, 32, 0, 128, 0, 0, 128, 0 )
 tile_set = SubResource( 8 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 1, 0, 458752, 3, 0, 458753, 3, 0, 458754, 3, 0, 458755, 3, 0, 458756, 3, 0, 458757, 3, 0, 458758, 3, 0, 458759, 3, 0, 458760, 3, 0, 458761, 3, 0, 458762, 3, 0, 458763, 3, 0, 458764, 3, 0, 458765, 3, 0, 458766, 3, 0, 458767, 3, 0, 458768, 3, 0, 458769, 3, 0, 458770, 3, 0, 458771, 3, 0, 458772, 3, 0, 458773, 3, 0, 458774, 3, 0, 524288, 3, 0, 524289, 3, 0, 524290, 3, 0, 524291, 3, 0, 524292, 3, 0, 524293, 3, 0, 524294, 3, 0, 524295, 3, 0, 524296, 3, 0, 524297, 3, 0, 524298, 3, 0, 524299, 3, 0, 524300, 3, 0, 524301, 3, 0, 524302, 3, 0, 524303, 3, 0, 524304, 3, 0, 524305, 3, 0, 524306, 3, 0, 524307, 3, 0, 524308, 3, 0, 524309, 3, 0, 524310, 3, 0 )
+tile_data = PackedInt32Array( 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 1, 0, 458752, 3, 0, 458753, 3, 0, 458754, 3, 0, 458755, 3, 0, 458756, 3, 0, 458757, 3, 0, 458758, 3, 0, 458759, 3, 0, 458760, 3, 0, 458761, 3, 0, 458762, 3, 0, 458763, 3, 0, 458764, 3, 0, 458765, 3, 0, 458766, 3, 0, 458767, 3, 0, 458768, 3, 0, 458769, 3, 0, 458770, 3, 0, 458771, 3, 0, 458772, 3, 0, 458773, 3, 0, 458774, 3, 0, 524288, 3, 0, 524289, 3, 0, 524290, 3, 0, 524291, 3, 0, 524292, 3, 0, 524293, 3, 0, 524294, 3, 0, 524295, 3, 0, 524296, 3, 0, 524297, 3, 0, 524298, 3, 0, 524299, 3, 0, 524300, 3, 0, 524301, 3, 0, 524302, 3, 0, 524303, 3, 0, 524304, 3, 0, 524305, 3, 0, 524306, 3, 0, 524307, 3, 0, 524308, 3, 0, 524309, 3, 0, 524310, 3, 0 )
 
 [node name="trees_tilesheet" type="TileMap" parent="."]
 tile_set = SubResource( 9 )
 format = 1
-tile_data = PoolIntArray( 524305, 3, 0, 589831, 3, 0, 589848, 3, 0, 589862, 3, 0 )
+tile_data = PackedInt32Array( 524305, 3, 0, 589831, 3, 0, 589848, 3, 0, 589862, 3, 0 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
-[node name="colored_desert" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[node name="colored_desert" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 208, 640 )
 scale = Vector2( 0.975083, 1.00311 )
 texture = ExtResource( 3 )
 offset = Vector2( 303.564, -119.627 )
 
-[node name="colored_desert2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[node name="colored_desert2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 1200, 640 )
 scale = Vector2( 0.975083, 1.00311 )
 texture = ExtResource( 3 )
 offset = Vector2( 303.564, -119.627 )
 
-[node name="colored_desert3" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[node name="colored_desert3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 2192, 640 )
 scale = Vector2( 0.975083, 1.00311 )
 texture = ExtResource( 3 )
@@ -269,8 +269,8 @@ limit_top = -700
 limit_right = 8000
 limit_bottom = 5000
 limit_smoothed = true
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-drag_margin_top = 0.3
-drag_margin_bottom = 0.3
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 0.3
+drag_bottom_margin = 0.3
 editor_draw_limits = true

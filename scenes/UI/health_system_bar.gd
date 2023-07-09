@@ -4,9 +4,9 @@ var heart_full = preload("res://sprites/GUI/hudHeart_full.png")
 var heart_half = preload("res://sprites/GUI/hudHeart_half.png")
 var heart_empty = preload("res://sprites/GUI/hudHeart_empty.png")
 
-export var current_value = 5
-export var max_value = 5
-export var step = 0.5
+@export var current_value = 5
+@export var max_value = 5
+@export var step = 0.5
 
 signal health_depleted
 

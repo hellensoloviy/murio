@@ -7,7 +7,7 @@ func _ready():
 
 
 func _on_back_button_pressed():
-	get_tree().change_scene(menu_screen_path)
+	get_tree().change_scene_to_file(menu_screen_path)
 
 
 func _on_save_button_pressed():

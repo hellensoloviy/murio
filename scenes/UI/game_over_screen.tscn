@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://fonts/ Kind and Rich - Personal Use.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/ Kind and Rich - Personal Use.otf" type="FontFile" id=1]
 [ext_resource path="res://scenes/UI/game_over_screen.gd" type="Script" id=2]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 200
 outline_color = Color( 0.215686, 0.811765, 0.960784, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 127
 font_data = ExtResource( 1 )
 
@@ -21,11 +21,11 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 406.0
-margin_top = 142.0
-margin_right = 1652.0
-margin_bottom = 891.0
-rect_scale = Vector2( 1, 1.04 )
+offset_left = 406.0
+offset_top = 142.0
+offset_right = 1652.0
+offset_bottom = 891.0
+scale = Vector2( 1, 1.04 )
 color = Color( 0.0352941, 0.027451, 0.027451, 0.513726 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -35,12 +35,12 @@ __meta__ = {
 modulate = Color( 0.396078, 0.854902, 0.921569, 1 )
 anchor_right = 1.0
 anchor_bottom = 0.989
-margin_left = 566.219
-margin_top = 208.012
-margin_right = -543.781
-margin_bottom = -549.788
-rect_scale = Vector2( 1, 0.879999 )
-custom_fonts/font = SubResource( 1 )
+offset_left = 566.219
+offset_top = 208.012
+offset_right = -543.781
+offset_bottom = -549.788
+scale = Vector2( 1, 0.879999 )
+theme_override_fonts/font = SubResource( 1 )
 text = "Your alien died... T_T
 
 "
@@ -49,11 +49,11 @@ __meta__ = {
 }
 
 [node name="load_game_button" type="Button" parent="."]
-margin_left = 667.835
-margin_top = 447.937
-margin_right = 1372.84
-margin_bottom = 589.937
-custom_fonts/font = SubResource( 2 )
+offset_left = 667.835
+offset_top = 447.937
+offset_right = 1372.84
+offset_bottom = 589.937
+theme_override_fonts/font = SubResource( 2 )
 text = "Try again?"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -62,12 +62,12 @@ __meta__ = {
 [node name="go_to_title_screen" type="Button" parent="."]
 anchor_top = -0.00670186
 anchor_bottom = -0.00670186
-margin_left = 667.835
-margin_top = 651.878
-margin_right = 1372.84
-margin_bottom = 793.878
-rect_pivot_offset = Vector2( 637.288, 142 )
-custom_fonts/font = SubResource( 2 )
+offset_left = 667.835
+offset_top = 651.878
+offset_right = 1372.84
+offset_bottom = 793.878
+pivot_offset = Vector2( 637.288, 142 )
+theme_override_fonts/font = SubResource( 2 )
 text = "Go To Title"
 __meta__ = {
 "_edit_use_anchors_": false

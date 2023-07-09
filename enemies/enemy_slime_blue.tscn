@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue_hit.png" type="Texture" id=1]
-[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue.png" type="Texture" id=2]
-[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue_dead.png" type="Texture" id=3]
-[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue_move.png" type="Texture" id=4]
+[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue_hit.png" type="Texture2D" id=1]
+[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue.png" type="Texture2D" id=2]
+[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue_dead.png" type="Texture2D" id=3]
+[ext_resource path="res://sprites/enemies/slimes/slime_blue/slimeBlue_move.png" type="Texture2D" id=4]
 [ext_resource path="res://enemies/enemy_slime.gd" type="Script" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -30,20 +30,20 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 23.8024, 35 )
+size = Vector2( 23.8024, 35 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 29, 6 )
+size = Vector2( 29, 6 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 46, 20 )
+size = Vector2( 46, 20 )
 
-[node name="enemy_slime" type="KinematicBody2D"]
+[node name="enemy_slime" type="CharacterBody2D"]
 collision_layer = 16
 collision_mask = 35
 script = ExtResource( 5 )
 
-[node name="Sprite" type="AnimatedSprite" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
 
@@ -54,7 +54,7 @@ shape = SubResource( 2 )
 
 [node name="floor_checker" type="RayCast2D" parent="."]
 enabled = true
-cast_to = Vector2( 0, 75 )
+target_position = Vector2( 0, 75 )
 collision_mask = 2
 
 [node name="top_checker" type="Area2D" parent="."]
@@ -72,7 +72,7 @@ position = Vector2( 0, 40 )
 shape = SubResource( 4 )
 
 [node name="Timer" type="Timer" parent="."]
-pause_mode = 2
+process_mode = 3
 wait_time = 3.0
 one_shot = true
 

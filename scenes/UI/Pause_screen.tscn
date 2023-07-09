@@ -1,35 +1,35 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://fonts/ Kind and Rich - Personal Use.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/ Kind and Rich - Personal Use.otf" type="FontFile" id=1]
 [ext_resource path="res://scenes/UI/Pause_screen.gd" type="Script" id=2]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="FontFile" id=3]
 size = 200
 outline_color = Color( 0.215686, 0.811765, 0.960784, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 127
 font_data = ExtResource( 1 )
 
 [node name="Pause_screen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 200.0
-margin_top = 101.0
-margin_right = -162.0
-margin_bottom = -156.0
+offset_left = 200.0
+offset_top = 101.0
+offset_right = -162.0
+offset_bottom = -156.0
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 255.0
-margin_top = 106.0
-margin_right = 1493.0
-margin_bottom = 911.0
-rect_scale = Vector2( 1, 1.04 )
+offset_left = 255.0
+offset_top = 106.0
+offset_right = 1493.0
+offset_bottom = 911.0
+scale = Vector2( 1, 1.04 )
 color = Color( 0.0352941, 0.027451, 0.027451, 0.247059 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -39,12 +39,12 @@ __meta__ = {
 modulate = Color( 0.396078, 0.854902, 0.921569, 1 )
 anchor_right = 1.0
 anchor_bottom = 0.989
-margin_left = 453.632
-margin_top = 179.865
-margin_right = -726.368
-margin_bottom = -577.935
-rect_scale = Vector2( 1, 0.879999 )
-custom_fonts/font = SubResource( 3 )
+offset_left = 453.632
+offset_top = 179.865
+offset_right = -726.368
+offset_bottom = -577.935
+scale = Vector2( 1, 0.879999 )
+theme_override_fonts/font = SubResource( 3 )
 text = "Need some pause?
 
 "
@@ -53,35 +53,35 @@ __meta__ = {
 }
 
 [node name="resume_game_button" type="Button" parent="."]
-margin_left = 519.059
-margin_top = 381.591
-margin_right = 1224.06
-margin_bottom = 523.591
-custom_fonts/font = SubResource( 2 )
+offset_left = 519.059
+offset_top = 381.591
+offset_right = 1224.06
+offset_bottom = 523.591
+theme_override_fonts/font = SubResource( 2 )
 text = "Resume"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="go_to_title_screen" type="Button" parent="."]
-margin_left = 519.059
-margin_top = 557.385
-margin_right = 1224.06
-margin_bottom = 699.385
-rect_pivot_offset = Vector2( 637.288, 142 )
-custom_fonts/font = SubResource( 2 )
+offset_left = 519.059
+offset_top = 557.385
+offset_right = 1224.06
+offset_bottom = 699.385
+pivot_offset = Vector2( 637.288, 142 )
+theme_override_fonts/font = SubResource( 2 )
 text = "Go To Title"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="go_to_desktop" type="Button" parent="."]
-margin_left = 519.059
-margin_top = 731.367
-margin_right = 1224.06
-margin_bottom = 873.367
-rect_pivot_offset = Vector2( 637.288, 142 )
-custom_fonts/font = SubResource( 2 )
+offset_left = 519.059
+offset_top = 731.367
+offset_right = 1224.06
+offset_bottom = 873.367
+pivot_offset = Vector2( 637.288, 142 )
+theme_override_fonts/font = SubResource( 2 )
 text = "Go To Desktop"
 __meta__ = {
 "_edit_use_anchors_": false

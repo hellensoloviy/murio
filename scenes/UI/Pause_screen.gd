@@ -6,7 +6,7 @@ func _ready():
 	pass 
 
 func _on_go_to_title_screen_pressed():
-	get_tree().change_scene(menu_screen_path)
+	get_tree().change_scene_to_file(menu_screen_path)
 	_set_paused(false)
 
 func _on_resume_game_button_pressed():

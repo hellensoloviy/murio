@@ -1,28 +1,28 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://sprites/ground/snow/snowLeft.png" type="Texture" id=1]
-[ext_resource path="res://sprites/ground/snow/snowMid.png" type="Texture" id=2]
-[ext_resource path="res://sprites/ground/snow/snowCenter.png" type="Texture" id=3]
-[ext_resource path="res://sprites/backgrounds/uncolored_piramids.png" type="Texture" id=4]
-[ext_resource path="res://sprites/ground/snow/snow.png" type="Texture" id=5]
-[ext_resource path="res://sprites/ground/snow/snowRight.png" type="Texture" id=6]
+[ext_resource path="res://sprites/ground/snow/snowLeft.png" type="Texture2D" id=1]
+[ext_resource path="res://sprites/ground/snow/snowMid.png" type="Texture2D" id=2]
+[ext_resource path="res://sprites/ground/snow/snowCenter.png" type="Texture2D" id=3]
+[ext_resource path="res://sprites/backgrounds/uncolored_piramids.png" type="Texture2D" id=4]
+[ext_resource path="res://sprites/ground/snow/snow.png" type="Texture2D" id=5]
+[ext_resource path="res://sprites/ground/snow/snowRight.png" type="Texture2D" id=6]
 [ext_resource path="res://player/player_alien_yellow.tscn" type="PackedScene" id=7]
-[ext_resource path="res://sprites/fluid/water/water.png" type="Texture" id=8]
+[ext_resource path="res://sprites/fluid/water/water.png" type="Texture2D" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+points = PackedVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+points = PackedVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+points = PackedVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+points = PackedVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+points = PackedVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="TileSet" id=6]
 0/name = "snowCenter.png 0"
@@ -132,7 +132,7 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 4/z_index = 0
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PackedVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 
 [sub_resource type="TileSet" id=8]
 0/name = "water.png 0"
@@ -164,19 +164,19 @@ position = Vector2( 4.69324, 131.247 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
-[node name="uncolored_piramids" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[node name="uncolored_piramids" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 1452.33, 1347.1 )
 scale = Vector2( 2.02194, 1.21172 )
 texture = ExtResource( 4 )
 offset = Vector2( -216.627, -594.607 )
 
-[node name="uncolored_piramids" type="Sprite" parent="ParallaxBackground/ParallaxLayer/uncolored_piramids"]
+[node name="uncolored_piramids" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer/uncolored_piramids"]
 position = Vector2( -1295, 6.86974 )
 scale = Vector2( 1.91748, 1.01052 )
 texture = ExtResource( 4 )
 offset = Vector2( -216.627, -594.607 )
 
-[node name="uncolored_piramids2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[node name="uncolored_piramids2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 5026.94, 1355.42 )
 scale = Vector2( 4.08824, 1.22447 )
 texture = ExtResource( 4 )
@@ -187,7 +187,7 @@ position = Vector2( -4.69324, -131.247 )
 tile_set = SubResource( 6 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 458762, 3, 0, 458763, 3, 0, 458764, 3, 0, 458765, 3, 0, 458766, 3, 0, 458767, 3, 0, 458771, 3, 0, 458772, 3, 0, 458773, 3, 0, 458774, 3, 0, 458775, 3, 0, 458776, 3, 0, 458777, 3, 0, 458778, 3, 0, 458779, 3, 0, 589816, 3, 0, 589817, 3, 0, 589818, 3, 0, 589819, 3, 0, 589820, 3, 0, 589821, 3, 0, 589822, 3, 0, 589823, 3, 0, 524288, 3, 0, 524289, 3, 0, 524290, 3, 0, 524291, 3, 0, 524292, 3, 0, 524293, 3, 0, 524294, 3, 0, 524295, 3, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0 )
+tile_data = PackedInt32Array( 458762, 3, 0, 458763, 3, 0, 458764, 3, 0, 458765, 3, 0, 458766, 3, 0, 458767, 3, 0, 458771, 3, 0, 458772, 3, 0, 458773, 3, 0, 458774, 3, 0, 458775, 3, 0, 458776, 3, 0, 458777, 3, 0, 458778, 3, 0, 458779, 3, 0, 589816, 3, 0, 589817, 3, 0, 589818, 3, 0, 589819, 3, 0, 589820, 3, 0, 589821, 3, 0, 589822, 3, 0, 589823, 3, 0, 524288, 3, 0, 524289, 3, 0, 524290, 3, 0, 524291, 3, 0, 524292, 3, 0, 524293, 3, 0, 524294, 3, 0, 524295, 3, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0 )
 
 [node name="player" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1383.64, 376.332 )
@@ -200,14 +200,14 @@ limit_top = -700
 limit_right = 8000
 limit_bottom = 5000
 limit_smoothed = true
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-drag_margin_top = 0.3
-drag_margin_bottom = 0.3
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 0.3
+drag_bottom_margin = 0.3
 editor_draw_limits = true
 
 [node name="waterTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 8 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 458780, 0, 0, 458781, 0, 0, 458782, 0, 0, 458783, 0, 0, 458784, 0, 0, 458785, 0, 0, 458786, 0, 0, 458787, 0, 0, 458788, 0, 0, 458789, 0, 0, 458790, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0, 524323, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 0, 0 )
+tile_data = PackedInt32Array( 458780, 0, 0, 458781, 0, 0, 458782, 0, 0, 458783, 0, 0, 458784, 0, 0, 458785, 0, 0, 458786, 0, 0, 458787, 0, 0, 458788, 0, 0, 458789, 0, 0, 458790, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0, 524323, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 0, 0 )

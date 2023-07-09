@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var pause_screen = $CanvasLayer/Pause_screen
+@onready var pause_screen = $CanvasLayer/Pause_screen
 
 func _ready():
 	pass 
