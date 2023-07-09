@@ -1,11 +1,12 @@
 extends Control
 
 var heart_full = preload("res://sprites/GUI/hudHeart_full.png")
+var heart_half = preload("res://sprites/GUI/hudHeart_half.png")
 var heart_empty = preload("res://sprites/GUI/hudHeart_empty.png")
 
 export var current_value = 5
 export var max_value = 5
-export var step = 1
+export var step = 0.5
 
 signal health_depleted
 
@@ -19,9 +20,11 @@ func _ready():
 
 func update_heart_value(value):
 	current_value = value
+	max_value = $bar.get_child_count()
+	
 	if value == 0: 
 		death_event()
-	for i in $bar.get_child_count():
+	for i in max_value:
 		if i < value:
 			$bar.get_child(i).texture = heart_full
 		else: 
