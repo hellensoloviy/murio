@@ -1,3 +1,4 @@
 res://default_env.tres
 res://scenes/UI/Menu.tscn
+res://player/Player.gd
 res://enemies/enemy_slime.gd

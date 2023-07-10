@@ -10,9 +10,9 @@ const SPEED : int = 100
 const JUMP_FORCE : int = -1200
 const GRAVITY : int = 35
  
-const _action_jump = "jump"
-const _action_move_left = "move_left"
-const _action_move_right = "move_right"
+const _action_jump = "ui_up"
+const _action_move_left = "ui_left"
+const _action_move_right = "ui_right"
 
 const _animation_jump = "jump"
 const _animation_walk = "walk"
@@ -20,12 +20,11 @@ const _animation_stand = "stand"
 
 const _EVENT_DEMAGE_TAKEN = "demage_taken"
 
-var velocity : Vector2 = Vector2()
-
 @onready var sprite = $Sprite2D
 
 func _ready():
 	pass
+	
 	
 func _physics_process (delta):
 
@@ -34,7 +33,7 @@ func _physics_process (delta):
 		velocity.x -= SPEED
 	if Input.is_action_pressed(_action_move_right):
 		velocity.x += SPEED
-	 
+		
 	# jump input
 	if Input.is_action_just_pressed(_action_jump) and is_on_floor():
 		velocity.y = JUMP_FORCE
@@ -65,8 +64,8 @@ func _physics_process (delta):
 	move_and_slide()
 	velocity = velocity
 	
-	velocity.x = lerp(velocity.x,0,0.2)
-	  
+	velocity.x = lerp(velocity.x,0.0,0.2)
+	
 	
 func bounce_back():
 	velocity.y = JUMP_FORCE * 0.7
@@ -96,7 +95,7 @@ func on_demage_taken_state(is_on):
 	set_collision_mask_value(4, not is_on)
 
 
-func _on_demage_taken_timeout():
+func _on_demage_taken_timeout(): #check - not working in new go-dot
 	on_demage_taken_state(false)
 	
 

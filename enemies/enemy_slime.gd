@@ -11,7 +11,6 @@ const _animation_hit = "hit"
 @onready var sprite = $Sprite2D
 
 func _ready():
-	velocity  = Vector2()
 	
 	if direction == 1:
 		sprite.flip_h = true
@@ -19,6 +18,7 @@ func _ready():
 	$floor_checker.enabled = detects_cliffs
 	
 	sprite.play(_animation_move)
+	move_and_slide()
 
 func _physics_process (delta):
 	
@@ -41,7 +41,7 @@ func _on_top_checker_body_entered(body):
 	sprite.play(_animation_hit)
 	set_modulate(Color(1,1,1,0.5))
 	
-	get_tree(). paused = true
+	get_tree().paused = true
 	
 	speed = 0
 	set_collision_layer_value(4, false)

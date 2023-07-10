@@ -1,18 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1688908277
-default_env.tres::Environment::-1::1688908182::0::1::::<><>::
+::res://::1688965349
+default_env.tres::Environment::8584079890132245856::1688964916::0::1::::<><>::
 GlobalSettings.gd::GDScript::-1::1688908182::0::1::::<>Node<>::
 GlobalSettings.tscn::PackedScene::-1::1688908182::0::1::::<><>::
 icon.png::CompressedTexture2D::2935718741615801733::1615910104::1688908278::1::::<><>::
 MainScene.gd::GDScript::-1::1688908182::0::1::::<>Node2D<>::
 MainScene.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://player/player_alien_yellow.tscn<>res://sprites/backgrounds/uncolored_piramids.png<>res://MainScene.gd<>res://enemies/enemy_slime_purple.tscn<>res://sprites/ground/forest/grassLeft.png<>res://sprites/ground/forest/grass.png<>res://sprites/ground/forest/grassCenter.png<>res://sprites/ground/forest/grassMid.png<>res://sprites/ground/forest/grassRight.png<>res://enemies/enemy_slime_green.tscn<>res://enemies/enemy_slime_blue.tscn<>res://scenes/UI/Pause_screen.tscn<>res://scenes/UI/health_system_bar.tscn
 README.md::TextFile::-1::1688908087::0::1::::<><>::
-::res://enemies/::1688908084
-enemy_slime.gd::GDScript::-1::1688908182::0::1::::<>CharacterBody2D<>::
+::res://enemies/::1688964916
+enemy_slime.gd::GDScript::-1::1688964916::0::1::::<>CharacterBody2D<>::
 enemy_slime_blue.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/enemies/slimes/slime_blue/slimeBlue_hit.png<>res://sprites/enemies/slimes/slime_blue/slimeBlue.png<>res://sprites/enemies/slimes/slime_blue/slimeBlue_dead.png<>res://sprites/enemies/slimes/slime_blue/slimeBlue_move.png<>res://enemies/enemy_slime.gd
 enemy_slime_green.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/enemies/slimes/slime_green/slimeGreen.png<>res://sprites/enemies/slimes/slime_green/slimeGreen_dead.png<>res://sprites/enemies/slimes/slime_green/slimeGreen_hit.png<>res://sprites/enemies/slimes/slime_green/slimeGreen_move.png<>res://enemies/enemy_slime.gd
 enemy_slime_purple.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/enemies/slimes/slime_purple/slimePurple.png<>res://sprites/enemies/slimes/slime_purple/slimePurple_hit.png<>res://sprites/enemies/slimes/slime_purple/slimePurple_dead.png<>res://sprites/enemies/slimes/slime_purple/slimePurple_move.png<>res://enemies/enemy_slime.gd
-::res://fonts/::1688908084
+::res://fonts/::1688908278
  Kind and Rich - Personal Use.otf::FontFile::2728206183890081417::1601351010::1688908278::1::::<><>::
 Roose Sally.otf::FontFile::6174994167154261846::1613390928::1688908278::1::::<><>::
 SayNextDemoItalic.ttf::FontFile::1527401511544605583::1619085306::1688908278::1::::<><>::
@@ -23,13 +23,13 @@ Player.gd::GDScript::-1::1688908182::0::1::::<>CharacterBody2D<>::
 player_alien_yellow.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/player_assets/alienYellow_swim2.png<>res://sprites/player_assets/alienYellow_duck.png<>res://sprites/player_assets/alienYellow_swim1.png<>res://sprites/player_assets/alienYellow_walk1.png<>res://sprites/player_assets/alienYellow_hit.png<>res://sprites/player_assets/alienYellow_jump.png<>res://sprites/player_assets/alienYellow_walk2.png<>res://player/Player.gd<>res://sprites/player_assets/alienYellow_stand.png
 ::res://readme/::1619121843
 ::res://readme/gifs/::1619121843
-::res://readme/images/::1688908110
+::res://readme/images/::1688908280
 basic_test_level_0.png::CompressedTexture2D::700856774586096625::1617133079::1688908279::1::::<><>::
 basic_test_level_1.png::CompressedTexture2D::3709753310986028296::1619121843::1688908280::1::::<><>::
 basic_test_level_2.png::CompressedTexture2D::1560132334960858866::1619121843::1688908280::1::::<><>::
 murio_logo_light.png::CompressedTexture2D::2880442907795293065::1619121843::1688908279::1::::<><>::
 ::res://scenes/::1620846017
-::res://scenes/UI/::1688908084
+::res://scenes/UI/::1688964916
 game_over_screen.gd::GDScript::-1::1688908182::0::1::::<>Control<>::
 game_over_screen.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://fonts/ Kind and Rich - Personal Use.otf<>res://scenes/UI/game_over_screen.gd
 health_system_bar.gd::GDScript::-1::1688908182::0::1::::<>Control<>::
@@ -37,7 +37,7 @@ health_system_bar.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites
 main_settings_screen.gd::GDScript::-1::1688908182::0::1::::<>Control<>::
 main_settings_screen.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/backgrounds/uncolored_piramids.png<>res://sprites/controls/logo_murio_plain.png<>res://fonts/ Kind and Rich - Personal Use.otf<>res://scenes/UI/main_settings_screen.gd
 Menu.gd::GDScript::-1::1688908182::0::1::::<>Control<>::
-Menu.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://scenes/UI/Menu.gd<>res://sprites/controls/logo_murio.png<>res://sprites/backgrounds/uncolored_piramids.png<>res://sprites/controls/logo_murio_plain.png<>res://fonts/ Kind and Rich - Personal Use.otf
+Menu.tscn::PackedScene::4680308164908024533::1688964916::0::1::::<><>::res://scenes/UI/Menu.gd<>uid://cd048hfdpvc0e::::res://sprites/controls/logo_murio.png<>uid://b26aok7hhi1jv::::res://sprites/backgrounds/uncolored_piramids.png<>uid://bqgq4hr0mjafd::::res://sprites/controls/logo_murio_plain.png<>uid://be4tfl1wryue8::::res://fonts/ Kind and Rich - Personal Use.otf
 Pause_screen.gd::GDScript::-1::1688908182::0::1::::<>Control<>::
 Pause_screen.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://fonts/ Kind and Rich - Personal Use.otf<>res://scenes/UI/Pause_screen.gd
 ::res://scenes/world/::1688908084
@@ -46,7 +46,7 @@ snow_world.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/ground
 desert_level.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/ground/desert/sandLeft.png<>res://sprites/ground/desert/sandRight.png<>res://sprites/backgrounds/colored_desert.png<>res://sprites/ground/desert/sandMid.png<>res://sprites/ground/desert/sandCliffAlt_right.png<>res://sprites/ground/desert/sandCliffAlt_left.png<>res://sprites/ground/desert/sandCenter.png<>res://sprites/background_parts/foliagePack_retina.png<>res://player/player_yellow.tscn
 mushrooms_level.tscn::PackedScene::-1::1688908182::0::1::::<><>::res://sprites/backgrounds/blue_shroom.png<>res://sprites/backgrounds/colored_shroom.png<>res://sprites/ground/forest/grassMid.png<>res://sprites/ground/forest/grass.png<>res://sprites/ground/forest/grassCenter.png<>res://sprites/ground/forest/grassRight.png<>res://sprites/ground/forest/grassLeft.png<>res://sprites/background_parts/foliagePack_retina.png
 ::res://sprites/::1623350479
-::res://sprites/backgrounds/::1688908110
+::res://sprites/backgrounds/::1688908278
 blue_desert.png::CompressedTexture2D::7613503478942973073::1620411495::1688908278::1::::<><>::
 blue_grass.png::CompressedTexture2D::9004597268490244369::1620411495::1688908278::1::::<><>::
 blue_land.png::CompressedTexture2D::1346489857984201283::1620411495::1688908278::1::::<><>::
@@ -56,7 +56,7 @@ colored_grass.png::CompressedTexture2D::3189304304505675338::1620411495::1688908
 colored_land.png::CompressedTexture2D::4073633418990518055::1620411495::1688908278::1::::<><>::
 colored_shroom.png::CompressedTexture2D::3742604717801365891::1620411495::1688908278::1::::<><>::
 uncolored_piramids.png::CompressedTexture2D::4345540748405486911::1616439795::1688908278::1::::<><>::
-::res://sprites/background_parts/::1688908110
+::res://sprites/background_parts/::1688908279
 bush.png::CompressedTexture2D::3209600404706775224::1623350411::1688908278::1::::<><>::
 cactus.png::CompressedTexture2D::8048634213887013569::1623350415::1688908278::1::::<><>::
 cloud1.png::CompressedTexture2D::1687583237011527868::1620844133::1688908278::1::::<><>::
@@ -70,46 +70,46 @@ mushroomRed.png::CompressedTexture2D::7492052763566242129::1623350430::168890827
 plantPurple.png::CompressedTexture2D::6858583113512382586::1623350430::1688908278::1::::<><>::
 rock.png::CompressedTexture2D::565816003217666104::1623350430::1688908278::1::::<><>::
 snow.png::CompressedTexture2D::7065989771728929674::1623350450::1688908278::1::::<><>::
-::res://sprites/controls/::1688908110
+::res://sprites/controls/::1688908279
 logo_murio.png::CompressedTexture2D::5036837441685535638::1618588473::1688908279::1::::<><>::
 logo_murio_plain.png::CompressedTexture2D::3522852103410884885::1618588480::1688908279::1::::<><>::
 ::res://sprites/enemies/::1620845617
-::res://sprites/enemies/bee/::1688908110
+::res://sprites/enemies/bee/::1688908278
 bee.png::CompressedTexture2D::2116342146770842254::1620845584::1688908278::1::::<><>::
 bee_dead.png::CompressedTexture2D::1724728760877741378::1620845584::1688908278::1::::<><>::
 bee_move.png::CompressedTexture2D::4394021489304010578::1620845584::1688908278::1::::<><>::
 ::res://sprites/enemies/slimes/::1620844649
-::res://sprites/enemies/slimes/slime_blue/::1688908110
+::res://sprites/enemies/slimes/slime_blue/::1688908278
 slimeBlue.png::CompressedTexture2D::1919338760122698402::1618591998::1688908278::1::::<><>::
 slimeBlue_dead.png::CompressedTexture2D::6570036445269046829::1618591998::1688908278::1::::<><>::
 slimeBlue_hit.png::CompressedTexture2D::6350191270116409206::1618591998::1688908278::1::::<><>::
 slimeBlue_move.png::CompressedTexture2D::1762172083701910048::1618591998::1688908278::1::::<><>::
-::res://sprites/enemies/slimes/slime_green/::1688908110
+::res://sprites/enemies/slimes/slime_green/::1688908278
 slimeGreen.png::CompressedTexture2D::8178257061033370906::1618591978::1688908278::1::::<><>::
 slimeGreen_dead.png::CompressedTexture2D::3506352861379920690::1618591978::1688908278::1::::<><>::
 slimeGreen_hit.png::CompressedTexture2D::8112859949456006470::1618591978::1688908278::1::::<><>::
 slimeGreen_move.png::CompressedTexture2D::5335080338035686134::1618591978::1688908278::1::::<><>::
-::res://sprites/enemies/slimes/slime_purple/::1688908110
+::res://sprites/enemies/slimes/slime_purple/::1688908278
 slimePurple.png::CompressedTexture2D::4022736760840153059::1618584184::1688908278::1::::<><>::
 slimePurple_dead.png::CompressedTexture2D::3844827424639587538::1618584118::1688908278::1::::<><>::
 slimePurple_hit.png::CompressedTexture2D::8516476383385990977::1618584118::1688908278::1::::<><>::
 slimePurple_move.png::CompressedTexture2D::8469707914752183267::1618584118::1688908278::1::::<><>::
-::res://sprites/enemies/snail/::1688908110
+::res://sprites/enemies/snail/::1688908278
 snail.png::CompressedTexture2D::8238140515814685409::1620845625::1688908278::1::::<><>::
 snail_move.png::CompressedTexture2D::717250967635022686::1620845625::1688908278::1::::<><>::
 snail_shell.png::CompressedTexture2D::2025046687007246003::1620845625::1688908278::1::::<><>::
 ::res://sprites/fluid/::1623937268
-::res://sprites/fluid/lava/::1688908110
+::res://sprites/fluid/lava/::1688908278
 bush.png::CompressedTexture2D::9116966016348094173::1623350401::1688908278::1::::<><>::
 lava.png::CompressedTexture2D::6066589430326014669::1623350390::1688908278::1::::<><>::
 lavaTop_high.png::CompressedTexture2D::1676104440015210200::1623350390::1688908278::1::::<><>::
 lavaTop_low.png::CompressedTexture2D::700688705182484752::1623350390::1688908278::1::::<><>::
-::res://sprites/fluid/water/::1688908110
+::res://sprites/fluid/water/::1688908278
 water.png::CompressedTexture2D::8864660253950914331::1622797486::1688908278::1::::<><>::
 waterTop_high.png::CompressedTexture2D::2107162491989844883::1622797486::1688908278::1::::<><>::
 waterTop_low.png::CompressedTexture2D::8741518193625425821::1622797486::1688908278::1::::<><>::
 ::res://sprites/ground/::1620845696
-::res://sprites/ground/desert/::1688908110
+::res://sprites/ground/desert/::1688908278
 sand.png::CompressedTexture2D::5668470575418811326::1620411411::1688908278::1::::<><>::
 sandCenter.png::CompressedTexture2D::6820590707792113028::1620411411::1688908278::1::::<><>::
 sandCenter_rounded.png::CompressedTexture2D::4022123093673001235::1620411411::1688908278::1::::<><>::
@@ -128,7 +128,7 @@ sandHill_right.png::CompressedTexture2D::3083490563994809425::1620411411::168890
 sandLeft.png::CompressedTexture2D::9040129673325791430::1620411411::1688908278::1::::<><>::
 sandMid.png::CompressedTexture2D::3947395763784688685::1620411411::1688908278::1::::<><>::
 sandRight.png::CompressedTexture2D::6533062907657171226::1620411411::1688908278::1::::<><>::
-::res://sprites/ground/forest/::1688908110
+::res://sprites/ground/forest/::1688908278
 blue_desert.png::CompressedTexture2D::4300571677492406960::1620411488::1688908278::1::::<><>::
 blue_grass.png::CompressedTexture2D::2536439869333028841::1620411488::1688908278::1::::<><>::
 blue_land.png::CompressedTexture2D::7228870400900506035::1620411488::1688908278::1::::<><>::
@@ -143,7 +143,7 @@ grassCenter_round.png::CompressedTexture2D::2591083883730401353::1617133810::168
 grassLeft.png::CompressedTexture2D::4981234576539762665::1618590993::1688908278::1::::<><>::
 grassMid.png::CompressedTexture2D::114914665752956027::1618590993::1688908278::1::::<><>::
 grassRight.png::CompressedTexture2D::1311066986051258458::1618590993::1688908278::1::::<><>::
-::res://sprites/ground/snow/::1688908110
+::res://sprites/ground/snow/::1688908278
 snow.png::CompressedTexture2D::1414294258256921332::1620845703::1688908278::1::::<><>::
 snowCenter.png::CompressedTexture2D::7239859776226646853::1620845703::1688908278::1::::<><>::
 snowCenter_rounded.png::CompressedTexture2D::9112437612623558382::1620845703::1688908278::1::::<><>::
@@ -162,12 +162,12 @@ snowHill_right.png::CompressedTexture2D::7613376973234893916::1620845703::168890
 snowLeft.png::CompressedTexture2D::3819545395446275374::1620845703::1688908278::1::::<><>::
 snowMid.png::CompressedTexture2D::1150845753896489727::1620845703::1688908278::1::::<><>::
 snowRight.png::CompressedTexture2D::8905707332932334316::1620845703::1688908278::1::::<><>::
-::res://sprites/GUI/::1688908110
+::res://sprites/GUI/::1688908278
 hudCoin.png::CompressedTexture2D::3965541672020532973::1620845784::1688908278::1::::<><>::
 hudHeart_empty.png::CompressedTexture2D::845073052574445669::1620845752::1688908278::1::::<><>::
 hudHeart_full.png::CompressedTexture2D::1765860315327145338::1620845752::1688908278::1::::<><>::
 hudHeart_half.png::CompressedTexture2D::7532206175076546561::1620845752::1688908278::1::::<><>::
-::res://sprites/player_assets/::1688908110
+::res://sprites/player_assets/::1688908278
 alienYellow_climb1.png::CompressedTexture2D::1400269597806425610::1617133810::1688908278::1::::<><>::
 alienYellow_climb2.png::CompressedTexture2D::5115710751781450276::1617133810::1688908278::1::::<><>::
 alienYellow_duck.png::CompressedTexture2D::4524746572418311025::1617133810::1688908278::1::::<><>::
@@ -181,7 +181,7 @@ alienYellow_walk1.png::CompressedTexture2D::3906161893308501095::1617133810::168
 alienYellow_walk2.png::CompressedTexture2D::1679727020950807085::1617133810::1688908278::1::::<><>::
 ::res://sprites/player_assets/aliens/::1621965371
 ::res://sprites/player_assets/aliens/green_alien/::1621966830
-::res://sprites/zones_and_objects/::1688908110
+::res://sprites/zones_and_objects/::1688908278
 ladderMid.png::CompressedTexture2D::1507173937677889552::1623350532::1688908278::1::::<><>::
 ladderTop.png::CompressedTexture2D::7192613737657989188::1623350532::1688908278::1::::<><>::
 spikes.png::CompressedTexture2D::8293718358546761209::1623350450::1688908278::1::::<><>::
