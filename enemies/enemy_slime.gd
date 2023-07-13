@@ -18,7 +18,6 @@ func _ready():
 	$floor_checker.enabled = detects_cliffs
 	
 	sprite.play(_animation_move)
-	move_and_slide()
 
 func _physics_process (delta):
 	
